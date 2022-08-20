@@ -12,9 +12,13 @@ function getRandomNum(min, max) {
  getRandomNum(20, 1)
 
 let getTimeOfDay = (h) => {
-    const timeOfDay = ['morning', 'evening', 'afternoon', 'night'];
-    let index = Math.floor(h/6) - 1;
-    return timeOfDay[index]
+    const timeOfDay = ['morning', 'afternoon', 'evening', 'night'];
+    if (h <= 5) {
+        return timeOfDay[3]
+    } else {
+       let index = Math.floor(h/6) - 1;
+        return timeOfDay[index] 
+    }
 };
 
 function setBg() {

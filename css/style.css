@@ -35,7 +35,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 120px;
+  width: 150px;
   margin-bottom: 28px;
 }
 
@@ -67,6 +67,71 @@ body {
 
 .item-active::before {
   color: #C5B358;
+}
+
+
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.progress {
+  background: linear-gradient(to right, #FF940A 0%, #FF940A 0%, #FFFFFF 0%, #FFFFFF 100%);
+  border-radius: 0px;
+  height: 4px;
+  width: 200px;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.progress::-webkit-slider-thumb {
+  width: 0px;
+  height: 4px;
+  -webkit-appearance: none;
+  cursor: ew-resize;
+  background: #33ff0a;
+  transform: translate(0px, 0px);
+}
+.progress-sound {
+  background: linear-gradient(to right, #FF940A 0%, #FF940A 40%, #FFFFFF 40%, #FFFFFF 100%);
+  border-radius: 0px;
+  height: 4px;
+  width: 50px;
+  outline: none;
+  transition: 450ms ease-in;
+  -webkit-appearance: none;
+}
+.progress-sound::-webkit-slider-thumb {
+  width: 0px;
+  height: 4px;
+  -webkit-appearance: none;
+  cursor: ew-resize;
+  background: #33ff0a;
+  transform: translate(0px, 0px);
+}
+
+.sound {
+  width: 30px;
+  height: 30px;
+  margin: 10px 10px 0;
+  border: none;
+  background-color: none;
+  background-image: url('../assets/svg/sound.svg') ;
+}
+
+.progress-time {
+  margin-left: 20px
+}
+
+.current-song {
+  height: 30px;
+}
+
+.progress-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 10px 0;
 }
 
 .player-icon,
@@ -287,4 +352,69 @@ body {
 
 p {
   margin: 8px 0;
+}
+
+
+
+.todo-list {
+  width: 300px;
+  margin: auto;
+}
+
+#input {
+  width: 70%;
+  border-radius: 5px;
+}
+
+#btn {
+  border: none;
+  border-radius: 5px;
+  height: 20px;
+  color: #FFFFFF;
+  background-color: #9f9f9f;
+  width: 20%;
+}
+
+.todo-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#result {
+  margin-bottom: 50px;
+}
+
+.btn {
+  background-color: #fd8181;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin-left: 15px;
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+}
+.li {
+  padding: 4px 8px;
+  margin: 10px 0;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  text-transform: capitalize;
+}
+
+.li-active {
+  color:dimgrey;
+  text-decoration: line-through;
+}
+
+.li-active .btn {
+  color:dimgrey;
+  text-decoration: line-through;
 }
