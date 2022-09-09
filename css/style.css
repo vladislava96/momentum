@@ -355,25 +355,31 @@ p {
   margin: 8px 0;
 }
 
-
-
 .todo-list {
   width: 300px;
-  margin: auto;
+  margin-right: 100px;
 }
 
 #input {
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 1px #FFFFFF;
+  color:#FFFFFF;
   width: 70%;
-  border-radius: 5px;
 }
+
+#input:focus{outline:none;}
+
 
 #btn {
   border: none;
   border-radius: 5px;
   height: 20px;
   color: #FFFFFF;
-  background-color: #9f9f9f;
+  border: solid 1px #FFFFFF;
+  background-color: transparent;
   width: 20%;
+  margin-left: 10px;
 }
 
 .todo-list ul {
@@ -383,11 +389,13 @@ p {
 }
 
 #result {
-  margin-bottom: 50px;
+  max-height: 110px;
+  overflow: auto;
+  margin-bottom: 10px;
 }
 
 .btn {
-  background-color: #fd8181;
+  background-color: transparent;
   border: none;
   border-radius: 5px;
   color: white;
@@ -418,4 +426,13 @@ p {
 .li-active .btn {
   color:dimgrey;
   text-decoration: line-through;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #FFFFFF;
+  border-radius: 10px;
 }

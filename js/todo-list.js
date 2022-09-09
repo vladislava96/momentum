@@ -18,7 +18,7 @@ function createDeleteElement(value) {
 
     const btn2 = document.createElement('button')
     btn2.className = 'btn'
-    btn2.textContent = 'add'
+    btn2.textContent = 'X'
 
     result.appendChild(li)
     li.appendChild(btn2)
