@@ -3,7 +3,7 @@ Momentum - аналог одноимённого приложения интер
 
 Ссылка на задание: https://github.com/rolling-scopes-school/tasks/blob/master/tasks/momentum/momentum-stage1.md
 
-Ссылка на деплой: https://adorable-druid-c7d54a.netlify.app/
+Ссылка на деплой: https://momentum-vladislava.netlify.app/
 
 Время начала выполнения: 	2022-08-03 03:00
 
