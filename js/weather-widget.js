@@ -21,7 +21,15 @@ async function getWeather() {
         windSpeed.textContent = `Wind speed: ${data.wind.speed} m/s`;
         humidity.textContent = `Humidity: ${data.main.humidity} %`; 
 
+        weatherError.textContent = ''
+        weatherIcon.style.display = 'block';
+        temperature.style.display = 'block';
+        weatherDescription.style.display = 'block';
+        windSpeed.style.display = 'block';
+        humidity.style.display = 'block';
+        
     } catch {
+        city.value = '';
         weatherError.textContent = 'Error! Сity ​​not found'
         weatherIcon.style.display = 'none';
         temperature.style.display = 'none';
